@@ -1,10 +1,7 @@
-<img src="./img/archer2_logo.png"  width="355" height="100" align="left" /> <img src="./img/epcc_logo.jpg" align="right" width="133" height="100" />
 
-<br /><br /><br /><br />
 
 # ARCHER2 GPU Programming with Directives course
 
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 
 

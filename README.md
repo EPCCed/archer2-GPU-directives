@@ -4,12 +4,6 @@
 
 
 
-
-## Course timetable
-
-
-
-
 ## Course requirements
 
 All attendees will need their own desktop or laptop.

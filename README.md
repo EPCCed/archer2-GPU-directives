@@ -5,10 +5,6 @@
 
 
 
-## Course timetable
-
-
-
 
 ## Course requirements
 

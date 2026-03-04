@@ -1,0 +1,66 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{GPU Programming with Directives Exercise \
+  Logging on, Compiling and Running}
+
+\maketitle
+
+\section{Introduction}
+
+
+The purpose of this exercise is to check you can compile and run
+simple GPU programs on ARCHER2.
+
+\section{Connecting to ARCHER2}
+
+Log on to ARCHER2: \verb+ssh username@login.archer2.ac.uk+ \\
+
+Note: for this exercise, it is important to use the work file system,
+i.e. \verb+cd /work/project/project/username+, and not the home file system.
+
+\section{Compiling and Running}
+The code is contained in saxyp.tar. The tar file can be fetched from GitHub by
+cloning the course repository with the following commands:
+
+\begin{verbatim}
+git clone https://github.com/EPCCed/archer2-GPU-directives.git
+cd archer2-GPU-directives
+git checkout 2025-04-22
+cd Exercises
+\end{verbatim}
+
+Alternatively, the file can be found on ARCHER2 and copied into your
+/work/ directory with the command:
+
+\begin{verbatim}
+cp /work/z19/shared/GPUdir/saxpy.tar .
+\end{verbatim}
+
+Unpack the file with the command: \verb+tar -xvf saxpy.tar+
+
+\section{Compiling and Running}
+
+Since this exercise will involve offloading to GPUs with OpenMP
+directives, certain modules must be loaded prior to compiling the
+code:
+
+\begin{verbatim}
+module load PrgEnv-amd
+module load rocm
+module load craype-accel-amd-gfx90a
+module load craype-x86-milan
+\end{verbatim}
+
+There are two examples, one using HIP and the other OpenMP. To compile and run the HIP example:
+
+\begin{verbatim}
+cd saxpy
+make -f Makefile-hip
+sbatch hipsaxpy.slurm
+\end{verbatim}
+
+and similarly for the OpenMP example.
+
+\end{document}

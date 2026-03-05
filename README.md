@@ -1,8 +1,10 @@
+<img src="./images/eduni_logo.png"  height="100" align="left"> <img src="./images/epcc_logo.jpg" align="right" height="100">
 
+<br /><br /><br /><br /><br />
 
-# ARCHER2 GPU Programming with Directives course
+# ARCHER2 GPU Programming with OpenMP course
 
-
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 ## Course requirements
 
@@ -12,12 +14,17 @@ If you are logging on to an external system then you will need to have an ssh cl
 
 Linux users should open a command-line terminal and use ssh from the command line.
 
-Mac can open the Mac termimal application and use ssh from the command line. However, to display graphics from Cirrus you will also need to install Xquartz. Xquartz provides its own terminal called “Xterm”: if you have problems displaying graphics when using the Mac terminal, try logging in using ssh from within this Xterm.
+Mac can open the Mac termimal application and use ssh from the command line. However, to display graphics from ARCHER2 you will also need to install Xquartz. Xquartz provides its own terminal called “Xterm”: if you have problems displaying graphics when using the Mac terminal, try logging in using ssh from within this Xterm.
 
-Windows users should install MobaXterm which provides ssh access, a Unix graphics client and a drag-and-drop file browser.
+Windows users should use WSL2 or install MobaXterm which provides ssh access, a Unix graphics client and a drag-and-drop file browser.
 
 ---
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
